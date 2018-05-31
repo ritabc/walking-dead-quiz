@@ -5,3 +5,7 @@ h1 {
 .result-box {
   display: none;
 }
+
+.result-box img {
+  width: 75%;
+}
