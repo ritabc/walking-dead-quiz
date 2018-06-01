@@ -11,15 +11,16 @@ function validateInput() {
 
 function countRadioBoxes() {
   var count = 0;
-  //fix this
-  $("input:radio").each(function(element) {
-    count++;
+  $("input:radio").each(function(index, item) {
+    if ($(item).is(':checked')) {
+      count++;
+    }
   });
   return count;
 }
 
 function allChecked(count) {
-  if (count >= 3) {
+  if (count === 3) {
     return true;
   } else {
     return false;
